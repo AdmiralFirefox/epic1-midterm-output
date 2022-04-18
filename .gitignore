@@ -1,0 +1,7 @@
+# Additional Pycharm Files
+/.idea
+
+# Test Files
+test1.py
+test2.py
+test3.py
