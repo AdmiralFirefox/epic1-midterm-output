@@ -57,4 +57,5 @@ pattern.draw_petals(14, 210, "#ECB410")
 pattern.draw_layer_pattern(admiral, 100, 10, "#C15604")
 pattern.draw_layer_pattern(admiral, 50, 10, "#9D7D16")
 
+admiral.hideturtle()
 turtle.exitonclick()
