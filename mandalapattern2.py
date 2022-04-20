@@ -49,29 +49,29 @@ class DreamCatcher:
     def draw_petal_pattern(self, num_petals, radius):
         admiral.width(2)
         for i in range(num_petals):
+            admiral.color(colors[i % 5])
             admiral.home()
             admiral.setheading(0)
             admiral.right(360 * i / num_petals)
             self.petal_pattern(radius)
-            admiral.color(colors[i % 5])
 
 
 pattern = DreamCatcher()
-
-# Outer Circles
-pattern.set_pos(0, 210)
-pattern.draw_circle(-210, "#00a9c1")
-
-pattern.set_pos(0, 220)
-pattern.draw_circle(-220, "#00a9c1")
 
 # Petal Patterns
 pattern.set_pos(0, 0)
 pattern.draw_petal_pattern(14, 150)
 
+# Outer Circles
+pattern.set_pos(-100, 185)
+pattern.draw_circle(-210, "#00a9c1")
+
+pattern.set_pos(-105, 195)
+pattern.draw_circle(-220, "#00a9c1")
+
 # Central Circle
-pattern.set_pos(-4, 10)
-pattern.draw_centered_circle(-10, "#00c5c0", "#121212")
+pattern.set_pos(-13, 23)
+pattern.draw_centered_circle(-25, "#00c5c0", "#121212")
 
 admiral.hideturtle()
 turtle.exitonclick()
