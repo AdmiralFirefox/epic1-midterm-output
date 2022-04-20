@@ -3,13 +3,13 @@ import math
 
 turtle.bgcolor("#121212")
 turtle.setup(960, 720)
-turtle.title("Sunflower Pattern")
+turtle.title("Flower Power")
 
 admiral = turtle.Turtle()
 admiral.speed(0)
 
 
-class SunFlowerPattern:
+class FlowerPower:
     # Petal
     @staticmethod
     def petal(radius):
@@ -29,7 +29,7 @@ class SunFlowerPattern:
     # Draw Petals
     def draw_petals(self, num_petals, radius, color):
         admiral.color(color)
-
+        admiral.width(2)
         for i in range(num_petals):
             admiral.home()
             admiral.setheading(0)
@@ -46,16 +46,17 @@ class SunFlowerPattern:
     # Draw Layer Pattern
     def draw_layer_pattern(self, turtle_name, size, repeat, color):
         admiral.color(color)
+        admiral.width(1)
         for i in range(repeat):
             self.layer(turtle_name, size)
             turtle_name.right(360 / repeat)
 
 
-pattern = SunFlowerPattern()
+pattern = FlowerPower()
 
-pattern.draw_petals(14, 210, "#ECB410")
-pattern.draw_layer_pattern(admiral, 100, 10, "#C15604")
-pattern.draw_layer_pattern(admiral, 50, 10, "#9D7D16")
+pattern.draw_petals(10, 200, "#ECB410")
+pattern.draw_layer_pattern(admiral, 90, 12, "#C15604")
+pattern.draw_layer_pattern(admiral, 50, 12, "#9D7D16")
 
 admiral.hideturtle()
 turtle.exitonclick()
