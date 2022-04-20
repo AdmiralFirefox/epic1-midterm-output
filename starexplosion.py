@@ -42,8 +42,10 @@ class StarExplosion:
 
 pattern = StarExplosion()
 
+# Draw Red Giant Layer Pattern
 pattern.draw_layer_pattern(admiral, 110, 75)
 
+# Draw Explosions
 pattern.set_pos(0, 0)
 pattern.explosion(220, "#ffa700")
 

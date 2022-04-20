@@ -32,7 +32,7 @@ class DreamCatcher:
         admiral.end_fill()
 
     @staticmethod
-    def petal_pattern(radius):
+    def web_pattern(radius):
         step = 4
         petal_arc = 0.25
 
@@ -46,21 +46,21 @@ class DreamCatcher:
 
             admiral.right(180 - 360 * petal_arc)
 
-    def draw_petal_pattern(self, num_petals, radius):
+    def draw_web_patterns(self, num_petals, radius):
         admiral.width(2)
         for i in range(num_petals):
             admiral.color(colors[i % 5])
             admiral.home()
             admiral.setheading(0)
             admiral.right(360 * i / num_petals)
-            self.petal_pattern(radius)
+            self.web_pattern(radius)
 
 
 pattern = DreamCatcher()
 
-# Petal Patterns
+# Web Patterns
 pattern.set_pos(0, 0)
-pattern.draw_petal_pattern(14, 150)
+pattern.draw_web_patterns(14, 150)
 
 # Outer Circles
 pattern.set_pos(-100, 185)

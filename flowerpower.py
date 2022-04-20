@@ -54,7 +54,10 @@ class FlowerPower:
 
 pattern = FlowerPower()
 
+# Draw Petal Patterns
 pattern.draw_petals(10, 200, "#ECB410")
+
+# Draw Layer Patterns
 pattern.draw_layer_pattern(admiral, 90, 12, "#C15604")
 pattern.draw_layer_pattern(admiral, 50, 12, "#9D7D16")
 
