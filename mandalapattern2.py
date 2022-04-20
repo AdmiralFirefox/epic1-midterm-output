@@ -66,7 +66,7 @@ pattern.draw_petal_pattern(14, 150)
 pattern.set_pos(-100, 185)
 pattern.draw_circle(-210, "#00a9c1")
 
-pattern.set_pos(-105, 195)
+pattern.set_pos(-105, 194)
 pattern.draw_circle(-220, "#00a9c1")
 
 # Central Circle
